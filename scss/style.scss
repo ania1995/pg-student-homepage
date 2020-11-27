@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins/mixins";
+@import "mixins/media-queries.scss";
 @import "base/body";
 @import "base/header";
 @import "base/nav";

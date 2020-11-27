@@ -1,2 +1,7 @@
 footer {
+  grid-area: "footer";
+  background-color: $dark-blue;
+  a {
+    @include imgContent;
+  }
 }

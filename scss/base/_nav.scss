@@ -1,4 +1,11 @@
 nav {
+  grid-area: "nav";
+  .nav {
+    display: flex;
+    &__button {
+      display: none;
+    }
+  }
 }
 
 ul {

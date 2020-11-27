@@ -1,0 +1,23 @@
+@mixin breakpoint-phone {
+  @media screen and (min-width: #{$screen-480}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet {
+  @media screen and (min-width: #{$screen-768}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet-large {
+  @media screen and (min-width: #{$screen-1024}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop {
+  @media screen and (min-width: #{$screen-1280}) {
+    @content;
+  }
+}

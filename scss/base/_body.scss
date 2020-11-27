@@ -5,4 +5,9 @@
 
 body {
   font-family: $font-Ubuntu;
+  grid-template-areas:
+    " header"
+    "nav"
+    "main"
+    "footer";
 }

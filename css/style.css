@@ -6,6 +6,35 @@
 
 body {
   font-family: "Ubuntu";
+      grid-template-areas: " header" "nav" "main" "footer";
+}
+
+header {
+  grid-area: "header";
+}
+
+header a {
+  width: auto;
+  height: 150px;
+  display: inline-block;
+}
+
+header a img {
+  height: 100%;
+}
+
+nav {
+  grid-area: "nav";
+}
+
+nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav__button {
+  display: none;
 }
 
 ul {
@@ -18,5 +47,24 @@ ul li {
 
 .hidden {
   display: none;
+}
+
+main {
+  grid-area: "main";
+}
+
+footer {
+  grid-area: "footer";
+  background-color: #011647;
+}
+
+footer a {
+  width: auto;
+  height: 150px;
+  display: inline-block;
+}
+
+footer a img {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
