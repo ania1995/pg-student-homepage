@@ -29,3 +29,8 @@
   justify-content: space-between;
   padding: 15px;
 }
+
+@mixin flexContener($justifyContent: center, $justifyContent: center) {
+  align-items: center;
+  justify-content: center;
+}
