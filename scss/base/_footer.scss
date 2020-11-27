@@ -1,7 +1,13 @@
 footer {
-  grid-area: "footer";
+  grid-area: footer;
+  justify-content: center;
+  color: $font-white;
   background-color: $dark-blue;
-  a {
-    @include imgContent;
+  .footer__content {
+    @include content;
+    a {
+      color: $font-white;
+      @include imgContent;
+    }
   }
 }

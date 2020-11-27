@@ -1,3 +1,7 @@
 main {
-  grid-area: "main";
+  grid-area: main;
+  .main__content {
+    @include content;
+    flex-direction: column;
+  }
 }

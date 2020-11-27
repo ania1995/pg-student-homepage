@@ -10,9 +10,22 @@
 }
 
 @mixin imgContent {
-  @include size($height: 150px);
-  display: inline-block;
+  @include size($width: 300px, $height: 100%);
+  display: block;
+  margin-top: 10px;
+  overflow: hidden;
   img {
-    height: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    scale: 2;
   }
+}
+
+@mixin content {
+  display: flex;
+  width: $max-content;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 15px;
 }

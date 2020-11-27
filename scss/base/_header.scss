@@ -1,5 +1,9 @@
 header {
-  grid-area: "header";
+  grid-area: header;
+  height: 120px;
+  .header__content {
+    @include content;
+  }
   a {
     @include imgContent;
   }

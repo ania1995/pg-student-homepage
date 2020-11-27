@@ -1,17 +1,51 @@
 nav {
-  grid-area: "nav";
+  margin: 0 auto;
+  display: flex;
+  grid-area: nav;
+  color: $font-white;
+  background-color: $middle-blue;
+  width: 100vw;
+
   .nav {
-    display: flex;
+    &__content {
+      @include content;
+    }
     &__button {
       display: none;
     }
+    &__section {
+      &--main {
+        background-color: $middle-blue;
+      }
+      &--sub {
+        background-color: $light-blue;
+      }
+    }
+    &__profile {
+      background-color: $middle-blue;
+      &--info {
+        border: 1px solid white;
+        border-right: none;
+        display: flex;
+        padding: 15px;
+        background: linear-gradient(90deg, $middle-blue, $light-blue);
+        h5,
+        p {
+          margin: 0 auto;
+          font-size: 1rem;
+        }
+      }
+    }
   }
-}
 
-ul {
-  text-decoration: none;
-  li {
-    list-style: none;
+  ul {
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+    li {
+      list-style: none;
+      padding: 15px;
+    }
   }
 }
 
