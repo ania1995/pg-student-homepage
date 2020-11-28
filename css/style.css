@@ -225,6 +225,13 @@ nav .nav__navigation ul {
   padding: 15px;
 }
 
+@media screen and (max-width: 498px) {
+  nav .nav__navigation ul {
+    font-size: 0.75rem;
+    font-weight: initial;
+  }
+}
+
 nav .nav__navigation ul li {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

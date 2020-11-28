@@ -60,6 +60,10 @@ nav {
       }
 
       ul {
+        @media screen and (max-width: 498px) {
+          font-size: 0.75rem;
+          font-weight: initial;
+        }
         display: flex;
         justify-content: space-evenly;
         padding: 15px;
