@@ -20,13 +20,16 @@ footer {
   //background for contact Modal
   .footer__content--contact {
     display: none;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3),
+      0 2px 6px 2px rgba(114, 117, 140, 0.3);
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+
     //contact Modal
     .contact__container {
       display: flex;
@@ -35,16 +38,90 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%);
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      width: 80%;
-      height: 60%;
-      border: 1px solid rgba(0, 0, 0, 0.308);
-      border-radius: 5px;
+      width: 95%;
+      height: 63%;
+      border-radius: 10px;
+      overflow: hidden;
       font-size: 0.7rem;
       background-color: white;
       box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3),
-        0 2px 6px 2px rgba(114, 117, 140, 0.15);
+        0 2px 6px 2px rgba(114, 117, 140, 0.3);
+      &--header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        width: 100%;
+        background-color: $middle-blue;
+        color: $font-white;
+        height: 70px;
+        h4 {
+          font-size: 1rem;
+        }
+        i {
+          @include iconDisplay;
+          color: black;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      &--content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        article {
+          font-size: 0.7rem;
+          height: 50%;
+          padding: 15px;
+          overflow-y: scroll;
+          box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3),
+            0 2px 6px 2px rgba(114, 117, 140, 0.15);
+          h5 {
+            font-size: 0.8rem;
+            border-bottom: 1px solid $font-light-blue;
+            color: $font-blue;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 0.7rem;
+            margin: 5px;
+          }
+          a {
+            color: $font-blue;
+            margin: 5px;
+          }
+          @include breakpoint-tablet {
+            height: 100%;
+            width: 50%;
+            h5 {
+              font-size: 1rem;
+              border-bottom: 1px solid $font-light-blue;
+              color: $font-blue;
+              margin-bottom: 15px;
+              padding-bottom: 10px;
+            }
+            p {
+              font-size: 0.9rem;
+              margin: 5px;
+            }
+            a {
+              font-size: 0.9rem;
+              color: $font-blue;
+              margin: 5px;
+            }
+          }
+        }
+        @include breakpoint-tablet {
+          flex-direction: row;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
     }
   }
 }

@@ -6,6 +6,7 @@ const body = document.querySelector("body");
 //start settings
 start();
 
+//CHECKING IF MODAL WITH USER INFORMATION SHOULD BE DAFAULT OPEN
 window.addEventListener("resize", () => {
   const w = window.innerWidth;
   if (w > 820) {
@@ -15,17 +16,11 @@ window.addEventListener("resize", () => {
   }
 });
 
+//OPEN MODAL WITH USER INFORMATION
 userIconBox.addEventListener("click", () => {
   userBox.classList.toggle("hidden");
   userIcon.classList.toggle("clickedUser");
 });
-
-function start() {
-  const w = window.innerWidth;
-  if (w <= 820) {
-    userBox.classList.add("hidden");
-  }
-}
 
 // MODAL
 const buttonCancel = document.querySelector(".buttonCancel");
@@ -33,15 +28,34 @@ const contactWindow = document.querySelector(".contact__container");
 const backgroundContactWindow = document.querySelector(
   ".footer__content--contact"
 );
-const contactButton = document.querySelector(".footer__content--link");
 
+//OPEN CONTACT MODAL
+const contactButton = document.querySelector(".footer__content--link");
 contactButton.addEventListener("click", (event) => {
   event.preventDefault();
   backgroundContactWindow.classList.add("visible");
-  console.log("click");
 });
-// ELEMENT TO MODIFICATION & CANCEL
+
+// CLOSE CONTACT MODAL
 buttonCancel.addEventListener("click", (event) => {
   event.preventDefault();
   backgroundContactWindow.classList.remove("visible");
 });
+
+// CLOSE CONTACT MODAL BY CLICK IN BACKGROUND
+backgroundContactWindow.addEventListener("click", (event) => {
+  if (
+    backgroundContactWindow.classList.contains("visible") &&
+    event.target === backgroundContactWindow
+  ) {
+    backgroundContactWindow.classList.remove("visible");
+  }
+});
+
+//UTILS FUNCTION
+function start() {
+  const w = window.innerWidth;
+  if (w <= 820) {
+    userBox.classList.add("hidden");
+  }
+}

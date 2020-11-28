@@ -602,9 +602,11 @@ footer .footer__content--logo img {
 
 footer .footer__content--contact {
   display: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
+          box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
   width: 100vw;
-  height: 100vh;
+  height: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -624,20 +626,129 @@ footer .footer__content--contact .contact__container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  height: 60%;
-  border: 1px solid rgba(0, 0, 0, 0.308);
-  border-radius: 5px;
+  width: 95%;
+  height: 63%;
+  border-radius: 10px;
+  overflow: hidden;
   font-size: 0.7rem;
   background-color: white;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
+          box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
+}
+
+footer .footer__content--contact .contact__container--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #002d70;
+  color: #fff;
+  height: 70px;
+}
+
+footer .footer__content--contact .contact__container--header h4 {
+  font-size: 1rem;
+}
+
+footer .footer__content--contact .contact__container--header i {
+  color: black;
+}
+
+footer .footer__content--contact .contact__container--header i.border {
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+footer .footer__content--contact .contact__container--header i:hover {
+  cursor: pointer;
+}
+
+footer .footer__content--contact .contact__container--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+footer .footer__content--contact .contact__container--content article {
+  font-size: 0.7rem;
+  height: 50%;
+  padding: 15px;
+  overflow-y: scroll;
   -webkit-box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.15);
           box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.15);
+}
+
+footer .footer__content--contact .contact__container--content article h5 {
+  font-size: 0.8rem;
+  border-bottom: 1px solid #d3dfec;
+  color: #00386a;
+  margin-bottom: 15px;
+}
+
+footer .footer__content--contact .contact__container--content article p {
+  font-size: 0.7rem;
+  margin: 5px;
+}
+
+footer .footer__content--contact .contact__container--content article a {
+  color: #00386a;
+  margin: 5px;
+}
+
+@media screen and (min-width: 821px) {
+  footer .footer__content--contact .contact__container--content article {
+    height: 100%;
+    width: 50%;
+  }
+  footer .footer__content--contact .contact__container--content article h5 {
+    font-size: 1rem;
+    border-bottom: 1px solid #d3dfec;
+    color: #00386a;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  footer .footer__content--contact .contact__container--content article p {
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+  footer .footer__content--contact .contact__container--content article a {
+    font-size: 0.9rem;
+    color: #00386a;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  footer .footer__content--contact .contact__container--content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .visible {
