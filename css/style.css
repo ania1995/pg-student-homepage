@@ -35,15 +35,15 @@ header a {
   width: 300px;
   height: 100%;
   display: block;
+  position: relative;
   margin-top: 10px;
-  overflow: hidden;
 }
 
 header a img {
-  display: block;
+  position: absolute;
   margin: 0 auto;
-  width: 50%;
-  scale: 2;
+  width: 300px;
+  top: -50px;
 }
 
 nav {
@@ -139,10 +139,6 @@ nav .nav__navigation ul li i.border {
   color: transparent;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: white;
-}
-
-nav .nav__navigation ul li i.light {
-  background: transparent;
 }
 
 nav .nav__profile {
@@ -260,8 +256,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
   background-color: #011647;
+  height: 200px;
 }
 
 footer .footer__content {
@@ -274,21 +270,31 @@ footer .footer__content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
 }
 
-footer .footer__content a {
+footer .footer__content--link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+footer .footer__content--logo {
   color: #fff;
   width: 300px;
   height: 100%;
   display: block;
+  position: relative;
   margin-top: 10px;
-  overflow: hidden;
 }
 
-footer .footer__content a img {
-  display: block;
+footer .footer__content--logo img {
+  position: absolute;
   margin: 0 auto;
-  width: 50%;
-  scale: 2;
+  width: 300px;
+  top: -50px;
 }
 /*# sourceMappingURL=style.css.map */

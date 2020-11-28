@@ -1,11 +1,18 @@
 footer {
   grid-area: footer;
   justify-content: center;
-  color: $font-white;
   background-color: $dark-blue;
+  height: 200px;
   .footer__content {
     @include content;
-    a {
+    align-items: center;
+    height: 120px;
+    &--link {
+      color: $font-white;
+      text-decoration: none;
+      border-bottom: 2px solid white;
+    }
+    &--logo {
       color: $font-white;
       @include imgContent;
     }

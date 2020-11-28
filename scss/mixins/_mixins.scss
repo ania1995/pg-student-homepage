@@ -12,13 +12,13 @@
 @mixin imgContent {
   @include size($width: 300px, $height: 100%);
   display: block;
+  position: relative;
   margin-top: 10px;
-  overflow: hidden;
   img {
-    display: block;
+    position: absolute;
     margin: 0 auto;
-    width: 50%;
-    scale: 2;
+    width: 300px;
+    top: -50px;
   }
 }
 
