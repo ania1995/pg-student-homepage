@@ -28,9 +28,14 @@
   margin: 0 auto;
   justify-content: space-between;
   padding: 15px;
+  @include breakpoint-tablet {
+    width: 100%;
+    margin: 0 auto;
+  }
   @include breakpoint-tablet-large {
     width: $max-content;
   }
+
   @include breakpoint-phone {
     width: 100vw;
   }

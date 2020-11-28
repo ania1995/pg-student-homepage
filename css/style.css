@@ -16,7 +16,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  height: 140px;
+  height: 110px;
 }
 
 header .header__content {
@@ -29,6 +29,13 @@ header .header__content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
+}
+
+@media screen and (min-width: 821px) {
+  header .header__content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1004px) {
@@ -87,6 +94,13 @@ nav .nav__content {
   z-index: 2;
 }
 
+@media screen and (min-width: 821px) {
+  nav .nav__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1004px) {
   nav .nav__content {
     width: 1004px;
@@ -110,6 +124,7 @@ nav .nav__navigation {
 @media screen and (max-width: 820px) {
   nav .nav__navigation {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -269,7 +284,7 @@ nav .nav__profile--data.profileInfo .profileInfo__info p {
 
 #background {
   position: absolute;
-  top: 140px;
+  top: 110px;
   left: 0px;
   width: 50%;
   height: 200px;
@@ -298,6 +313,13 @@ main .main__content {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 130px;
+}
+
+@media screen and (min-width: 821px) {
+  main .main__content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1004px) {
@@ -381,6 +403,13 @@ footer .footer__content {
       -ms-flex-align: center;
           align-items: center;
   height: 120px;
+}
+
+@media screen and (min-width: 821px) {
+  footer .footer__content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1004px) {
