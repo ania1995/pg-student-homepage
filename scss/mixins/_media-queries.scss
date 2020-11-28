@@ -1,5 +1,5 @@
 @mixin breakpoint-phone {
-  @media screen and (min-width: #{$screen-480}) {
+  @media screen and (max-width: #{$screen-799}) {
     @content;
   }
 }
