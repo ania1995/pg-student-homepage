@@ -63,6 +63,7 @@ nav {
         @media screen and (max-width: 498px) {
           font-size: 0.75rem;
           font-weight: initial;
+          overflow: hidden;
         }
         display: flex;
         justify-content: space-evenly;

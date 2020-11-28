@@ -11,7 +11,7 @@ window.addEventListener("resize", () => {
   const w = window.innerWidth;
   if (w > 820) {
     userBox.classList.remove("hidden");
-  } else if (w < 820) {
+  } else if (w <= 820) {
     userBox.classList.add("hidden");
   }
 });
