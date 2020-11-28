@@ -45,3 +45,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin iconDisplay {
+  &.border {
+    background: transparent;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+  }
+}

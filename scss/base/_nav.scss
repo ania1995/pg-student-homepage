@@ -67,19 +67,29 @@ nav {
           align-self: center;
           list-style: none;
           vertical-align: center;
-          padding: 0 5px;
+          padding: 0 5px 5px;
+          border-bottom: 1px solid transparent;
+          &:hover {
+            border-bottom: 1px solid $font-white;
+          }
           i {
             margin-right: 10px;
-            &.border {
-              background: transparent;
-              color: transparent;
-              -webkit-text-stroke-width: 1.5px;
-              -webkit-text-stroke-color: white;
-            }
+            @include iconDisplay;
           }
           a {
             color: $font-white;
             text-decoration: none;
+          }
+          &:hover {
+            i {
+              background: transparent;
+              color: white;
+              -webkit-text-stroke-width: initial;
+            }
+            a {
+              color: $font-white;
+              text-decoration: none;
+            }
           }
         }
       }

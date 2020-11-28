@@ -3,8 +3,24 @@ header {
   height: $header-height;
   .header__content {
     @include content;
+    height: 100%;
   }
   a {
     @include imgContent;
+  }
+  div {
+    @include breakpoint-phone {
+      align-self: end;
+      i {
+        color: $font-blue;
+        &:hover {
+          @include iconDisplay;
+          -webkit-text-stroke-color: $font-blue !important;
+        }
+      }
+    }
+    @include breakpoint-tablet {
+      display: none;
+    }
   }
 }
