@@ -99,8 +99,46 @@ nav {
       }
     }
     &__profile {
+      position: relative;
       @include breakpoint-phone {
-        display: none;
+        position: absolute;
+        display: flex;
+        background-color: $middle-blue;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &--header {
+          display: none;
+        }
+        &--data {
+          height: $nav-min-height;
+          padding-left: 30px;
+          background: linear-gradient(90deg, $middle-blue, $light-blue);
+          &.profileInfo {
+            display: flex;
+            align-items: center;
+            .profileInfo__photo {
+              height: 80px;
+              width: 80px;
+              border-radius: 40px;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              img {
+                height: auto;
+                width: 100%;
+              }
+            }
+            .profileInfo__info {
+              margin-left: 15px;
+              h5,
+              p {
+                margin: 0 auto;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
       }
       @include breakpoint-tablet {
         display: flex;
@@ -156,7 +194,7 @@ nav {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 #background {
