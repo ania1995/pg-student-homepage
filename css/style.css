@@ -37,7 +37,7 @@ header .header__content {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   header .header__content {
     width: 100vw;
   }
@@ -93,7 +93,7 @@ nav .nav__content {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   nav .nav__content {
     width: 100vw;
   }
@@ -107,7 +107,7 @@ nav .nav__navigation {
   width: 63%;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   nav .nav__navigation {
     width: 100%;
   }
@@ -143,7 +143,6 @@ nav .nav__navigation--sub {
 }
 
 nav .nav__navigation ul {
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +172,11 @@ nav .nav__navigation ul li i.border {
   -webkit-text-stroke-color: white;
 }
 
+nav .nav__navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 nav .nav__profile {
   background-color: #002d70;
   display: -webkit-box;
@@ -189,13 +193,13 @@ nav .nav__profile {
   width: 35%;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   nav .nav__profile {
     display: none;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 821px) {
   nav .nav__profile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -293,6 +297,7 @@ main .main__content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 130px;
 }
 
 @media screen and (min-width: 1004px) {
@@ -301,10 +306,54 @@ main .main__content {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   main .main__content {
     width: 100vw;
   }
+}
+
+main .main__content section {
+  padding-bottom: 20px;
+}
+
+main .main__content section h1 {
+  font-size: 2.5rem;
+  color: #00386a;
+  font-weight: normal;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3dfec;
+}
+
+main .main__content section h1 a {
+  color: #d3dfec;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+main .main__content section h2 {
+  font-size: 1.6rem;
+  color: #00386a;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3dfec;
+}
+
+main .main__content section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main__content section article h3,
+main .main__content section article p {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+main .main__content section article h3 {
+  width: 200px;
 }
 
 footer {
@@ -340,7 +389,7 @@ footer .footer__content {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 820px) {
   footer .footer__content {
     width: 100vw;
   }

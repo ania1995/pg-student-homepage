@@ -1,11 +1,11 @@
 @mixin breakpoint-phone {
-  @media screen and (max-width: #{$screen-799}) {
+  @media screen and (max-width: #{$screen-820}) {
     @content;
   }
 }
 
 @mixin breakpoint-tablet {
-  @media screen and (min-width: #{$screen-800}) {
+  @media screen and (min-width: #{$screen-821}) {
     @content;
   }
 }
