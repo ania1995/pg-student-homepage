@@ -34,12 +34,14 @@ const contactButton = document.querySelector(".footer__content--link");
 contactButton.addEventListener("click", (event) => {
   event.preventDefault();
   backgroundContactWindow.classList.add("visible");
+  body.classList.add("overflowHidden");
 });
 
 // CLOSE CONTACT MODAL
 buttonCancel.addEventListener("click", (event) => {
   event.preventDefault();
   backgroundContactWindow.classList.remove("visible");
+  body.classList.remove("overflowHidden");
 });
 
 // CLOSE CONTACT MODAL BY CLICK IN BACKGROUND
@@ -50,6 +52,7 @@ backgroundContactWindow.addEventListener("click", (event) => {
   ) {
     backgroundContactWindow.classList.remove("visible");
   }
+  body.classList.remove("overflowHidden");
 });
 
 //UTILS FUNCTION

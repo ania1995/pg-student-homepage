@@ -606,11 +606,12 @@ footer .footer__content--contact {
   -webkit-box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
           box-shadow: 0 1px 2px 0 rgba(114, 117, 140, 0.3), 0 2px 6px 2px rgba(114, 117, 140, 0.3);
   width: 100vw;
-  height: 100vw;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
+  overflow: hidden;
 }
 
 footer .footer__content--contact .contact__container {
@@ -633,7 +634,7 @@ footer .footer__content--contact .contact__container {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  height: 63%;
+  height: 80%;
   border-radius: 10px;
   overflow: hidden;
   font-size: 0.7rem;
@@ -751,9 +752,20 @@ footer .footer__content--contact .contact__container--content article a {
   }
 }
 
+@media screen and (min-width: 821px) {
+  footer .footer__content--contact .contact__container {
+    width: 95%;
+    height: 63%;
+  }
+}
+
 .visible {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+.overflowHidden {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
