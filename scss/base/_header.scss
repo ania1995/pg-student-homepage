@@ -10,7 +10,7 @@ header {
   }
   div {
     @include breakpoint-phone {
-      align-self: end;
+      align-self: flex-end;
       i {
         color: $font-blue;
         &:hover {
