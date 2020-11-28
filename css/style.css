@@ -769,4 +769,9 @@ footer .footer__content--contact .contact__container--content article a {
 .overflowHidden {
   overflow: hidden;
 }
+
+#googleMap {
+  width: 100px;
+  height: 100px;
+}
 /*# sourceMappingURL=style.css.map */
