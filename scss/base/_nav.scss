@@ -9,6 +9,7 @@ nav {
 
   .nav {
     &__content {
+      margin: 0;
       @include content;
       padding: 0;
       z-index: 2;
@@ -17,6 +18,9 @@ nav {
       display: none;
     }
     &__navigation {
+      @include breakpoint-phone {
+        width: 100%;
+      }
       width: 63%;
       &--main {
         background-color: $middle-blue;
@@ -44,6 +48,7 @@ nav {
           align-self: center;
           list-style: none;
           vertical-align: center;
+          padding: 0 5px;
           i {
             margin-right: 10px;
             &.border {
@@ -57,6 +62,12 @@ nav {
       }
     }
     &__profile {
+      @include breakpoint-phone {
+        display: none;
+      }
+      @include breakpoint-tablet {
+        display: flex;
+      }
       background-color: $middle-blue;
       display: flex;
       flex-direction: column;

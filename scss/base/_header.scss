@@ -1,6 +1,6 @@
 header {
   grid-area: header;
-  height: 140px;
+  height: $header-height;
   .header__content {
     @include content;
   }

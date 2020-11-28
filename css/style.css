@@ -23,12 +23,24 @@ header .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1004px;
+  max-width: 1004px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
+}
+
+@media screen and (min-width: 1004px) {
+  header .header__content {
+    width: 1004px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header .header__content {
+    width: 100vw;
+  }
 }
 
 header a {
@@ -61,10 +73,11 @@ nav {
 }
 
 nav .nav__content {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1004px;
+  max-width: 1004px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -74,12 +87,30 @@ nav .nav__content {
   z-index: 2;
 }
 
+@media screen and (min-width: 1004px) {
+  nav .nav__content {
+    width: 1004px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  nav .nav__content {
+    width: 100vw;
+  }
+}
+
 nav .nav__button {
   display: none;
 }
 
 nav .nav__navigation {
   width: 63%;
+}
+
+@media screen and (min-width: 480px) {
+  nav .nav__navigation {
+    width: 100%;
+  }
 }
 
 nav .nav__navigation--main {
@@ -128,6 +159,7 @@ nav .nav__navigation ul li {
       align-self: center;
   list-style: none;
   vertical-align: center;
+  padding: 0 5px;
 }
 
 nav .nav__navigation ul li i {
@@ -155,6 +187,20 @@ nav .nav__profile {
           justify-content: start;
   margin-left: 40px;
   width: 35%;
+}
+
+@media screen and (min-width: 480px) {
+  nav .nav__profile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav .nav__profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 nav .nav__profile--header {
@@ -237,7 +283,7 @@ main .main__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1004px;
+  max-width: 1004px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -247,6 +293,18 @@ main .main__content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1004px) {
+  main .main__content {
+    width: 1004px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  main .main__content {
+    width: 100vw;
+  }
 }
 
 footer {
@@ -264,7 +322,7 @@ footer .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1004px;
+  max-width: 1004px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -276,6 +334,18 @@ footer .footer__content {
   height: 120px;
 }
 
+@media screen and (min-width: 1004px) {
+  footer .footer__content {
+    width: 1004px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  footer .footer__content {
+    width: 100vw;
+  }
+}
+
 footer .footer__content--link {
   color: #fff;
   text-decoration: none;
@@ -283,12 +353,12 @@ footer .footer__content--link {
 }
 
 footer .footer__content--logo {
-  color: #fff;
   width: 300px;
   height: 100%;
   display: block;
   position: relative;
   margin-top: 10px;
+  left: 0;
 }
 
 footer .footer__content--logo img {

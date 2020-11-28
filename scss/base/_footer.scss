@@ -6,15 +6,15 @@ footer {
   .footer__content {
     @include content;
     align-items: center;
-    height: 120px;
+    height: $footer-height;
     &--link {
       color: $font-white;
       text-decoration: none;
       border-bottom: 2px solid white;
     }
     &--logo {
-      color: $font-white;
       @include imgContent;
+      left: 0;
     }
   }
 }
