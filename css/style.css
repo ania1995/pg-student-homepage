@@ -755,6 +755,7 @@ footer .footer__content--contact .contact__container--content article a {
 @media screen and (min-width: 821px) {
   footer .footer__content--contact .contact__container {
     width: 95%;
+    max-width: 1004px;
     height: 63%;
   }
 }
