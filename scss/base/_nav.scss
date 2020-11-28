@@ -72,9 +72,21 @@ nav {
           list-style: none;
           vertical-align: center;
           padding: 0 5px 5px;
-          border-bottom: 1px solid transparent;
-          &:hover {
-            border-bottom: 1px solid $font-white;
+          .dropbtn {
+            //padding: 5px 5px;
+            height: 70px;
+
+            //   color: pink;
+            //   border-bottom: 4px solid transparent;
+            &:hover {
+              background-color: $dark-blue;
+            }
+          }
+          &.sub__link {
+            border-bottom: 1px solid transparent;
+            &:hover {
+              border-bottom: 1px solid $font-white;
+            }
           }
           i {
             margin-right: 10px;

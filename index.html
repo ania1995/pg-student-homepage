@@ -38,29 +38,60 @@
         ></button>
         <section class="nav__navigation">
           <ul class="nav__navigation--main">
-            <li><a href="#">Strona główna</a></li>
-            <li><a href="#">Pracownicy</a></li>
-            <li><a href="#">Biznes</a></li>
-            <li><a href="#">Uczelnia</a></li>
-            <li><a href="#">Absolwenci</a></li>
+            <li class="dropdown">
+              <button class="dropbtn">Strona główna</button>
+              <div class="dropdown-content"></div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Pracownicy</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Biznes</button>
+              <div class="dropdown-content">
+                <a href="#">Biznes 1</a>
+                <a href="#">Biznes 2</a>
+                <a href="#">Biznes 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Uczelnia</button>
+              <div class="dropdown-content">
+                <a href="#">Uczelnia 1</a>
+                <a href="#">Uczelnia 2</a>
+                <a href="#">Uczelnia 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button class="dropbtn">Absolwenci</button>
+              <div class="dropdown-content">
+                <a href="#">2018</a>
+                <a href="#">2019</a>
+                <a href="#">2020</a>
+              </div>
+            </li>
           </ul>
           <ul class="nav__navigation--sub">
-            <li>
+            <li class="sub__link">
               <i
                 class="fa fa-graduation-cap fa-2x border"
                 aria-hidden="true"
               ></i>
               <a href="#">Start</a>
             </li>
-            <li>
+            <li class="sub__link">
               <i class="fas fa-copy fa-2x border" aria-hidden="true"></i>
               <a href="#">Studia</a>
             </li>
-            <li>
+            <li class="sub__link">
               <i class="fa fa-award fa-2x border" aria-hidden="true"></i>
               <a href="#">III Stopień</a>
             </li>
-            <li>
+            <li class="sub__link">
               <i class="fa fa-usd fa-2x border" aria-hidden="true"></i>
               <a href="#">Płatności</a>
             </li>

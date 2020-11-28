@@ -1,0 +1,39 @@
+.dropbtn {
+  background-color: $middle-blue;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding-bottom: 0;
+  height: 100%;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &-content {
+    display: none;
+    position: absolute;
+    background-color: $dark-blue;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top: 4px solid white;
+    * {
+      border-bottom: 4px solid $space-between;
+    }
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
