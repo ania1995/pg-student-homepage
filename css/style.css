@@ -50,13 +50,14 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.9rem;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
   color: #fff;
   background-color: #002d70;
   width: 100vw;
-  height: 250px;
+  height: 200px;
 }
 
 nav .nav__content {
@@ -69,8 +70,7 @@ nav .nav__content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding: 0;
   z-index: 2;
 }
 
@@ -78,11 +78,15 @@ nav .nav__button {
   display: none;
 }
 
-nav .nav__section--main {
+nav .nav__navigation {
+  width: 63%;
+}
+
+nav .nav__navigation--main {
   background-color: #002d70;
   border-radius: 0 0 0 30px;
   text-transform: uppercase;
-  height: 33%;
+  height: 38%;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -92,11 +96,12 @@ nav .nav__section--main {
           justify-content: center;
 }
 
-nav .nav__section--sub {
+nav .nav__navigation--sub {
   background-color: #16569e;
+  font-weight: bold;
   border-radius: 0 30px 0 0;
-  font-size: 1.4rem;
-  height: 67%;
+  font-size: 1rem;
+  height: 62%;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -104,40 +109,112 @@ nav .nav__section--sub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+nav .nav__navigation ul {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px;
+}
+
+nav .nav__navigation ul li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  list-style: none;
+  vertical-align: center;
+}
+
+nav .nav__navigation ul li i {
+  margin-right: 10px;
+}
+
+nav .nav__navigation ul li i.border {
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+nav .nav__navigation ul li i.light {
+  background: transparent;
 }
 
 nav .nav__profile {
   background-color: #002d70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 40px;
+  width: 35%;
 }
 
-nav .nav__profile--info {
+nav .nav__profile--header {
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin: 0;
+}
+
+nav .nav__profile--data {
   border: 1px solid white;
   border-right: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   padding: 15px;
+  margin: 0;
   background: -webkit-gradient(linear, left top, right top, from(#002d70), to(#16569e));
   background: linear-gradient(90deg, #002d70, #16569e);
 }
 
-nav .nav__profile--info h5,
-nav .nav__profile--info p {
-  margin: 0 auto;
-  font-size: 1rem;
-}
-
-nav ul {
-  text-decoration: none;
+nav .nav__profile--data.profileInfo {
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav ul li {
-  list-style: none;
-  padding: 15px;
+nav .nav__profile--data.profileInfo .profileInfo__photo {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav .nav__profile--data.profileInfo .profileInfo__photo img {
+  height: auto;
+  width: 100%;
+}
+
+nav .nav__profile--data.profileInfo .profileInfo__info {
+  margin-left: 15px;
+}
+
+nav .nav__profile--data.profileInfo .profileInfo__info h5,
+nav .nav__profile--data.profileInfo .profileInfo__info p {
+  margin: 0 auto;
+  font-size: 0.9rem;
 }
 
 .hidden {
@@ -149,7 +226,7 @@ nav ul li {
   top: 140px;
   left: 0px;
   width: 50%;
-  height: 250px;
+  height: 200px;
   background-color: #16569e;
   z-index: 1;
 }

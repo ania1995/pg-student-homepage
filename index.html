@@ -8,6 +8,10 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/0d7721a732.js"
+      crossorigin="anonymous"
+    ></script>
     <title>PG Student Page</title>
   </head>
   <body>
@@ -25,26 +29,47 @@
           aria-label="Main Menu"
           class="nav__button"
         ></button>
-        <section class="nav__section">
-          <ul class="nav__section--main">
+        <section class="nav__navigation">
+          <ul class="nav__navigation--main">
             <li>Strona główna</li>
             <li>Pracownicy</li>
             <li>Biznes</li>
             <li>Uczelnia</li>
             <li>Absolwenci</li>
           </ul>
-          <ul class="nav__section--sub">
-            <li>Start</li>
-            <li>Studia</li>
-            <li>III Stopień</li>
-            <li>Płatności</li>
+          <ul class="nav__navigation--sub">
+            <li>
+              <i
+                class="fa fa-graduation-cap fa-2x border"
+                aria-hidden="true"
+              ></i
+              >Start
+            </li>
+            <li>
+              <i class="fas fa-copy fa-2x border" aria-hidden="true"></i>Studia
+            </li>
+            <li>
+              <i class="fa fa-award fa-2x border" aria-hidden="true"></i>III
+              Stopień
+            </li>
+            <li>
+              <i class="fa fa-usd fa-2x border" aria-hidden="true"></i>Płatności
+            </li>
           </ul>
         </section>
         <section class="nav__profile">
-          <h4>Mój profil</h4>
-          <div class="nav__profile--info">
-            <img src="" alt="" title="" width="50" height="50" />
-            <div>
+          <h4 class="nav__profile--header">Mój profil</h4>
+          <div class="nav__profile--data profileInfo">
+            <div class="profileInfo__photo">
+              <img
+                src="img/profilePhoto.jpg"
+                alt=""
+                title=""
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="profileInfo__info">
               <h5>Anna Stanek</h5>
               <p>606 441 460</p>
               <p>aniastanekk@gmail.com</p>
