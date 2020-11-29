@@ -788,7 +788,7 @@ footer .footer__content--contact .contact__container--content article a {
 }
 
 .dropbtn {
-  background-color: #002d70;
+  background-color: transparent;
   color: white;
   text-transform: uppercase;
   border: none;
