@@ -4,7 +4,7 @@ nav {
   grid-area: nav;
   color: $font-white;
   background-color: $middle-blue;
-  width: 100vw;
+  //width: 100vw;
   height: $nav-min-height;
   @include breakpoint-tablet {
     height: $nav-height;

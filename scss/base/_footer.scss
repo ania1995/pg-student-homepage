@@ -115,6 +115,9 @@ footer {
               color: $font-blue;
               margin: 5px;
             }
+            &.contact__map {
+              overflow: hidden;
+            }
           }
         }
         @include breakpoint-tablet {

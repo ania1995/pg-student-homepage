@@ -105,7 +105,6 @@ nav {
   grid-area: nav;
   color: #fff;
   background-color: #002d70;
-  width: 100vw;
   height: 150px;
 }
 
@@ -751,6 +750,9 @@ footer .footer__content--contact .contact__container--content article a {
     color: #00386a;
     margin: 5px;
   }
+  footer .footer__content--contact .contact__container--content article.contact__map {
+    overflow: hidden;
+  }
 }
 
 @media screen and (min-width: 821px) {
@@ -831,5 +833,25 @@ footer .footer__content--contact .contact__container--content article a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 /*# sourceMappingURL=style.css.map */
