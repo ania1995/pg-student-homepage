@@ -63,7 +63,7 @@ nav {
         @media screen and (max-width: 498px) {
           font-size: 0.75rem;
           font-weight: initial;
-          overflow: hidden;
+          overflow-x: visible;
         }
         display: flex;
         justify-content: space-evenly;
@@ -74,11 +74,7 @@ nav {
           vertical-align: center;
           padding: 0 5px 5px;
           .dropbtn {
-            //padding: 5px 5px;
             height: 70px;
-
-            //   color: pink;
-            //   border-bottom: 4px solid transparent;
             &:hover {
               background-color: $dark-blue;
             }
